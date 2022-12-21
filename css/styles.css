@@ -18,8 +18,12 @@
 колір фону другий F5F4FA
 */
 body {
-    color: var(--primary-text-color);
     font-family: Montserrat, sans-serif;
+    font-family: 'Roboto';
+    color: var(--primary-text-color);
+    font-family: 'Roboto';
+    font-size: 14px;
+    letter-spacing: 0.03em
 }
 
 .list {
@@ -51,18 +55,14 @@ body {
 .header-nav.linc {
     color: var(--titel-text-color);
     text-decoration: none;
-    font-family: 'Roboto';
     font-weight: 500;
-    font-size: 14px;
     line-height: calc(16 / 14);
     letter-spacing: 0.02em;
 }
 
 .header-nav.linc-current {
     color: var(--accent-text-color);
-    font-family: 'Roboto';
     font-weight: 500;
-    font-size: 14px;
     line-height: calc(16 / 14);
     letter-spacing: 0.02em;
     text-decoration: none;
@@ -79,9 +79,7 @@ body {
 .header-email {
     color: var(--primary-text-color);
     text-decoration: none;
-    font-family: 'Roboto';
     font-weight: 500;
-    font-size: 14px;
     line-height: calc(16 / 14);
     letter-spacing: 0.02em;
 }
@@ -89,9 +87,7 @@ body {
 .header-tel {
     color: var(--primary-text-color);
     text-decoration: none;
-    font-family: 'Roboto';
     font-weight: 500;
-    font-size: 14px;
     line-height: calc(16 / 14);
     letter-spacing: 0.02em;
 }
@@ -114,7 +110,6 @@ body {
 
 .section-hero.title {
     color: var(--hero-text-color);
-    font-family: 'Roboto';
     font-weight: 900;
     font-size: 44px;
     line-height: calc(60 / 44);
@@ -127,7 +122,7 @@ body {
 .section-hero.button {
     background-color: var(--accent-text-color);
     color: var(--hero-text-color);
-    font-family: inherit;
+    font-family: 'Roboto';
     font-weight: 700;
     font-size: 16px;
     line-height: calc(30 / 16);
@@ -142,57 +137,45 @@ body {
 /* -----benefits------ */
 .section-benefits.title {
     color: var(--titel-text-color);
-    font-family: 'Roboto';
     font-weight: 700;
     font-size: 14px;
     line-height: calc(16 / 14);
-    letter-spacing: 0.03em;
     text-transform: uppercase;
 }
 
 .section-benefits.text {
-    font-family: 'Roboto';
     font-size: 14px;
     line-height: calc(24 / 14);
-    letter-spacing: 0.03em;
 }
 
 /* --------work------- */
 .section-work.title {
     color: var(--titel-text-color);
-    font-family: 'Roboto';
     font-size: 36px;
     line-height: calc(42 / 36);
     text-align: center;
-    letter-spacing: 0.03em;
 }
 
 
 /* -------team-------- */
 .section-team.title {
     color: var(--titel-text-color);
-    font-family: 'Roboto';
     font-size: 36px;
     line-height: calc(42 / 36);
     text-align: center;
-    letter-spacing: 0.03em;
 
 }
 
 .section-team.heading {
     color: var(--titel-text-color);
-    font-family: 'Roboto';
     font-weight: 500;
     font-size: 16px;
     line-height: calc(19 / 16);
-    letter-spacing: 0.03em;
 }
 
 .section-team.text {
-    font-family: 'Roboto';
     font-size: 16px;
     line-height: calc(19 / 16);
-    letter-spacing: 0.03em;
 }
 
 /* ---------------------FOOTER------------------- */
@@ -222,10 +205,7 @@ body {
     color: var(--hero-text-color);
     font-style: normal;
     text-decoration: none;
-    font-family: 'Roboto';
-    font-size: 14px;
     line-height: calc(24 / 14);
-    letter-spacing: 0.03em;
 }
 
 .footer-address.more:hover,
@@ -235,20 +215,16 @@ body {
 
 .footer-email.email {
     color: rgba(255, 255, 255, 0.6);
-    text-decoration: none;
-    font-family: 'Roboto';
-    font-size: 14px;
+    font-style: normal;
     line-height: calc(24 / 14);
-    letter-spacing: 0.03em;
+    text-decoration: none;
 }
 
 .footer-tel.tel {
     color: rgba(255, 255, 255, 0.6);
-    text-decoration: none;
-    font-family: 'Roboto';
-    font-size: 14px;
+    font-style: normal;
     line-height: calc(24 / 14);
-    letter-spacing: 0.03em;
+    text-decoration: none;
 }
 
 .footer-email.email:hover,
@@ -265,6 +241,8 @@ body {
 button {
     background-color: var(--accent-bgr-color);
     color: var(--titel-text-color);
+    font-family: 'Roboto';
+    letter-spacing: 0.03em;
 }
 
 button:hover,
@@ -272,19 +250,18 @@ button:focus {
     background-color: var(--accent-text-color);
     color: var(--hero-text-color);
     cursor: pointer;
+    font-family: 'Roboto';
+    letter-spacing: 0.03em;
 }
 
-.title {
+.section-filter.title {
     color: var(--titel-text-color);
-    font-family: 'Roboto';
     font-size: 18px;
     line-height: calc(36 / 18);
     letter-spacing: 0.06em;
 }
 
 .section-filter.linc {
-    font-family: 'Roboto';
     font-size: 16px;
     line-height: calc(30 / 16);
-    letter-spacing: 0.03em;
 }
