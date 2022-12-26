@@ -14,6 +14,7 @@ body {
   color: var(--primary-text-color);
   font-size: 14px;
   letter-spacing: 0.03em;
+  margin: 0;
 }
 
 .list {
@@ -38,21 +39,26 @@ ul {
 }
 
 .section {
-  padding: 94px 15px;
+  padding: 94px 0;
 }
 
-/* ------------------DIV--------------------------- */
 .container {
   margin-left: auto;
   margin-right: auto;
   width: 1200px;
+  padding: 0 15px;
 }
 
+.hidden-header{
+  opacity: 0;
+}
 /*-------------------HEADER------------------------ */
 
 /* logo */
+header{
+  border-bottom: 1px solid #ECECEC; ;
+}
 .cap {
-  width: 1170px;
   display: flex;
   align-items: center;
 }
@@ -128,11 +134,11 @@ ul {
 
 /* email tel */
 .connections.list {
+  margin-left: auto;
   display: flex;
 }
 
 .connections.linc {
-  margin-left: 344px;
   margin-right: 50px;
 }
 
@@ -173,13 +179,20 @@ ul {
 /*--------------------MAIN------------------------- */
 /* -------hero------- */
 .section.hero {
-  padding-top: 0px;
+  padding-top: 200px;
+  padding-bottom: 200px;
   background-color: var(--hero-bgr-color);
   text-align: center;
 }
 
 .section-hero.title {
+  margin-left:auto;
+  margin-right: auto;
   margin-bottom: 30px;
+  width: 696px;
+
+
+
   color: var(--hero-text-color);
   font-weight: 900;
   font-size: 44px;
@@ -190,6 +203,9 @@ ul {
 
 /* button */
 .section-hero.button {
+padding: 10px 32px;
+border-radius: 4px;
+
   background-color: var(--accent-text-color);
   color: var(--hero-text-color);
   font-family: "Roboto";
@@ -205,6 +221,9 @@ ul {
 }
 
 /* -----benefits------ */
+.benefits{
+  padding-bottom: 0;
+}
 
 .section-benefits.list {
   display: flex;
@@ -247,6 +266,7 @@ ul {
 
 .section-work.linc {
   margin-right: 30px;
+  display: block;
 }
 
 .section-work.linc:nth-child(3n) {
@@ -277,7 +297,19 @@ ul {
 }
 
 .section-team.linc {
+display: flex;
+flex-wrap:wrap;
+flex-direction:column;
+align-items:center;
+
+
+width: 270px;
   margin-right: 30px;
+  background-color:#FFFFFF;
+
+
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 0px 0px 4px 4px;
 }
 
 .section-team.linc:nth-child(4n) {
@@ -289,6 +321,7 @@ ul {
 }
 
 .section-team.title {
+  
   margin-bottom: 50px;
   color: var(--titel-text-color);
   font-size: 36px;
@@ -300,7 +333,12 @@ ul {
   margin-bottom: 30px;
 }
 
+.section-team.img{
+  margin-bottom: 30px;
+}
+
 .section-team.heading {
+  
   margin-bottom: 10px;
   color: var(--titel-text-color);
   font-weight: 500;
@@ -309,6 +347,7 @@ ul {
 }
 
 .section-team.text {
+ padding-bottom:30px;
   font-size: 16px;
   line-height: calc(19 / 16);
 }
@@ -398,6 +437,8 @@ button {
   color: var(--titel-text-color);
   font-family: "Roboto";
   letter-spacing: 0.03em;
+  padding: 0;
+  border: 0;
 }
 
 button:hover,
@@ -408,14 +449,19 @@ button:focus {
   font-family: "Roboto";
   letter-spacing: 0.03em;
 }
+.button{
+padding: 6px 25px;
 
+box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+border-radius: 4px;
+}
 .section-breadcrumbs.list {
   display: flex;
   justify-content: center;
 }
 
 .section-breadcrumbs.linc {
-  margin-right: 30px;
+  margin-right: 8px;
   margin-bottom: 50px;
 }
 
@@ -460,5 +506,8 @@ button:focus {
 }
 
 .img {
-  margin-bottom: 20px;
+display: block;
+}
+.title-text{
+  padding: 20px 24px;
 }
