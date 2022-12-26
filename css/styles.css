@@ -56,9 +56,16 @@ ul {
 
 /* logo */
 header{
-  border-bottom: 1px solid #ECECEC; ;
+  /* position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.08); */
+  border-bottom: 1px solid #ECECEC; 
 }
 .cap {
+ 
+
   display: flex;
   align-items: center;
 }
@@ -136,13 +143,26 @@ header{
 .connections.list {
   margin-left: auto;
   display: flex;
+  align-items: center;
 }
 
 .connections.linc {
-  margin-right: 50px;
+  margin-right: 30px;
+ 
 }
 
+.connections.linc::before{
+  margin-right: 10px;
+  height: 12px;
+  width: 16px;
+  content: url(../images/cap/email.svg);
+  background-size: contain;
+}
+
+
+
 .header-email {
+
   padding-top: 32px;
   padding-bottom: 32px;
 
@@ -153,6 +173,17 @@ header{
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
 }
+
+
+.connections.tel::before{
+  margin-right: 10px;
+  height: 16px;
+  width: 16px;
+  content: url(../images/cap/tel.svg);
+  background-size: contain;
+}
+
+
 
 .header-tel {
   padding-top: 32px;
@@ -178,20 +209,30 @@ header{
 
 /*--------------------MAIN------------------------- */
 /* -------hero------- */
+
+.hero{
+  text-align: center;
+} 
+
 .section.hero {
+  max-width: 1600px;
+  height: 600px;
   padding-top: 200px;
   padding-bottom: 200px;
   background-color: var(--hero-bgr-color);
-  text-align: center;
-}
+   margin-left: auto;
+   margin-right: auto;
+   background-image: linear-gradient(to right, 
+   rgba(47, 48, 58, 0.4), 
+   rgba(47, 48, 58, 0.4)), url(../images/hero/Img.jpg);
+   background-repeat: no-repeat;
+   background-position: center; }
 
 .section-hero.title {
   margin-left:auto;
   margin-right: auto;
   margin-bottom: 30px;
   width: 696px;
-
-
 
   color: var(--hero-text-color);
   font-weight: 900;
@@ -237,6 +278,32 @@ border-radius: 4px;
 
 .section-benefits.linc:last-child {
  margin-right: 0px;
+}
+
+
+
+.section-benefits.linc::before{
+  display:block;
+  content: '';
+  height: 120px;
+background-repeat: no-repeat;
+background-position: center;
+background-color: #F5F4FA;
+border-radius: 4px;
+  margin-bottom: 30px;
+}
+
+.section-benefits.linc.warning::before{
+  background-image: url(../images/benefits/1.svg);
+}
+.section-benefits.linc.punctuality::before{
+  background-image: url(../images/benefits/2.svg);
+}
+.section-benefits.linc.planning::before{
+  background-image: url(../images/benefits/3.svg);
+}
+.section-benefits.linc.modernity::before{
+  background-image: url(../images/benefits/4.svg);
 }
 
 .section-benefits.title {
@@ -296,6 +363,8 @@ border-radius: 4px;
   flex-wrap: wrap;
 }
 
+
+
 .section-team.linc {
 display: flex;
 flex-wrap:wrap;
@@ -351,6 +420,7 @@ border-radius: 0px 0px 4px 4px;
   font-size: 16px;
   line-height: calc(19 / 16);
 }
+
 
 /* ---------------------FOOTER------------------- */
 
@@ -450,7 +520,12 @@ button:focus {
   letter-spacing: 0.03em;
 }
 .button{
-padding: 6px 25px;
+  font-family: 'Roboto';
+font-weight: 500;
+font-size: 16px;
+line-height: calc(26 / 16);
+text-align: center;
+padding: 6px 22px;
 
 box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 border-radius: 4px;
@@ -510,4 +585,7 @@ display: block;
 }
 .title-text{
   padding: 20px 24px;
+  border: 1px solid #EEEEEE;
+box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+border-top:0;
 }
