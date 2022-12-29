@@ -396,7 +396,7 @@ border-radius: 4px;
 
 
 .social-team{
-  fill: #757575;
+  fill: var(--primary-text-color);
 }
 .social-team:hover,
 .social-team:focus{
@@ -406,7 +406,7 @@ border-radius: 4px;
 
 .section-team.list {
   display: flex;
-  flex-wrap: wrap;
+
 }
 
 
@@ -427,10 +427,6 @@ border-radius: 0px 0px 4px 4px;
 
 .section-team.linc:nth-child(4n) {
   margin-right: 0px;
-}
-
-.section.team {
-  background-color: var(--accent-bgr-color);
 }
 
 .section-team.title {
